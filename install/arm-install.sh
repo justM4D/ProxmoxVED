@@ -72,8 +72,7 @@ msg_info "Setting up Python Environment"
 cd /opt/arm
 $STD uv venv /opt/arm/venv
 $STD uv pip install --python /opt/arm/venv/bin/python \
-  -r <(curl -fsSL https://raw.githubusercontent.com/automatic-ripping-machine/arm-dependencies/main/requirements.txt) \
-  -r requirements.txt
+  -r <(curl -fsSL https://raw.githubusercontent.com/automatic-ripping-machine/arm-dependencies/main/requirements.txt)
 msg_ok "Set up Python Environment"
 
 msg_info "Configuring Application"
